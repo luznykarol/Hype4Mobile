@@ -1,22 +1,39 @@
 .btn {
-    font-size: 1rem;
     font-weight: 600;
     line-height: 1.6rem;
     color: var(--color-white);
-    height: 34px;
+    height: 3.4rem;
     width: 100%;
     border-radius: 4px;
     background: linear-gradient(90deg, var(--color-gradient) 0%, var(--color-gradient-light) 100%);
-    box-shadow: 0 2px 4px 0 rgba(250,91,30,0.34);
+    box-shadow: 0 2px 4px 0 var(--color-shadow);
     text-transform: uppercase;
     display: block;
     text-align: center;
     padding: 1rem 0 .9rem 0;
-    transition: .3s ease;
 
-    &:hover {
-        transform: scale(1.05);
+
+    @media only screen and (max-width: 485px) {
+        margin-top: 1.5rem;
     }
-    
 
+    @media only screen and (min-width: 485px) {
+        display: none;
+    }
+
+    &--small {
+        font-weight: 600;
+        display: block;
+        height: 3.4rem;
+        width: 7.5rem;
+        border-radius: 4px;
+        margin: .7em 1.8rem 0 1.7rem;
+        box-shadow: 0 2px 4px 0 var(--color-shadow);
+        transition: .2s ease;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
 }
+

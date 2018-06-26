@@ -1,0 +1,51 @@
+.icons {   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    margin-top: 1.2rem;
+
+    &__eye {
+        background-image: url(../img/oko.png);
+        background-size: cover;
+        height: 1.2rem;
+        width: 1.8rem;
+        transition: .2s all ease;
+
+        &--top {
+            @media only screen and (max-width: 485px) {
+                position: absolute;
+                top: 9px;
+                right: -3px;
+                background-image: url(../img/oko.png);
+                background-size: cover;
+                height: 1.2rem;
+                width: 1.8rem;
+                transition: .2s all ease;
+
+                &:hover {
+                    transform: scale(1.1);
+                    background-image: url(../img/okohover.png)
+                }
+            }
+        }
+        
+        &:hover {
+            transform: scale(1.1);
+            background-image: url(../img/okohover.png)
+        }
+    }
+
+    &__scales {
+        background-image: url(../img/waga.png);
+        background-size: cover; 
+        height: 1.4rem;
+        width: 1.8rem;
+        transition: .2s all ease;
+
+        &:hover {
+            transform: scale(1.1);
+            background-image: url(../img/wagahover.png)
+        }
+    }
+}
